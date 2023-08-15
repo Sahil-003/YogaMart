@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="addtocart.js"></script>
+    <title>Products</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div>
+                <a class="logo" href="index.html"><img src="\images\logo\logo.png" alt="YogaMart" width="260px" /></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="#footer">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="products.html"><img src="https://i.ibb.co/PNjjx3y/cart.png" alt="" width="30px"
+                    height="30px" />0</a>
+            <img src="https://i.ibb.co/6XbqwjD/menu.png" alt="" class="menu-icon" onclick="menutoggle()" />
+        </div>
+    </div>
+
+    <!-- cart item details -->
+
+<div class="container">
+    <div id="root">
+        <div class="sidebar">
+            <div class="head"><p>My Cart</p></div>
+            <div id="catItem">Your Cart is Empty</div>
+            <div class="foot">
+                <h3>Total</h3>
+                <h2 id="total">&#8377; 0.00</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="small-container">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/3.png">
+                        <div>
+                            <p>Designer Yoga Mat</p>
+                            <small>Price: &#8377; 450</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>&#8377; 450</td>
+                
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/9.png">
+                        <div>
+                            <p>Yoga blocks</p>
+                            <small>Price: &#8377; 350</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>&#8377; 350</td>
+                
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/4.png">
+                        <div>
+                            <p>Yoga Mat</p>
+                            <small>Price: &#8377; 250</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>&#8377; 250</td>
+                
+            </tr>
+        </table>
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>SubTotal</td>
+                    <td>&#8377; 1050</td>
+                </tr>
+                <tr>
+                    <td>Shipping Amount</td>
+                    <td>&#8377; 70</td>
+                </tr>
+                <tr>
+                    <td>Payable Amount</td>
+                    <td>&#8377; 1120</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+<br><br><hr><br><br><br><br><br><br><br>
+
+    <div id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h1>Thanks For Visiting</h1>
+                    <p>YogaMart - Elevate Your Spirit</p>
+                    <br>
+                    <hr><br>
+                    <p>
+                        Our Purpose Is To Sustainably Make the Pleasure and
+                        <br> Benefits of Yoga Accessible to the Many.
+                    </p>
+                </div>
+
+                <div class="footer-col-2">
+                    <img src="images/logo/logo2.png" alt="" />
+                </div>
+
+                <div class="footer-col-4">
+                    <h3>Follow us : </h3>
+                    <br>
+                    <ul>
+
+                        <li><a href="https://www.instagram.com/_sahil_ch._003_/?next=%2F">
+                                <h3>Facebook</h3>
+                            </a> </li><br>
+                        <li><a href="https://www.instagram.com/_sahil_ch._003_/?next=%2F">
+                                <h3>Twitter</h3>
+                            </a> </li><br>
+                        <li><a href="https://www.instagram.com/_sahil_ch._003_/?next=%2F">
+                                <h3>Instagram</h3>
+                            </a> </li><br>
+                        <li><a href="https://www.instagram.com/_sahil_ch._003_/?next=%2F">
+                                <h3>Threads</h3>
+                            </a> </li>
+                    </ul>
+                </div>
+            </div>
+            <hr />
+            <p class="copyright">Copyright &copy; 2023 - YogaMart</p>
+        </div>
+    </div>
+
+
+    <script>
+        var MenuItems = document.getElementById('MenuItems');
+        MenuItems.style.maxHeight = '0px';
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == '0px') {
+                MenuItems.style.maxHeight = '160px';
+            } else {
+                MenuItems.style.maxHeight = '0px';
+            }
+        }
+
+    </script>
+    <script src="addtocart.js"></script>
+</body>
+
+</html>
